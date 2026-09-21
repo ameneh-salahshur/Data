@@ -317,7 +317,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
     <div class="photo-card">
       <img src="photo.jpg" alt="آمنه سلحشور — کارشناس هوش تجاری">
       <div class="badge-float"><span class="pulse"></span>
-        <span data-fa="۱۷+ سال در دنیای داده" data-en="17+ years in data">۱۷+ سال در دنیای داده</span>
+        <span data-fa="18+ سال در دنیای داده" data-en="18+ years in data">18+ سال در دنیای داده</span>
       </div>
     </div>
   </div>
@@ -804,16 +804,16 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
 
   /* =======================================================================
      گالری داشبوردها — برای اضافه کردن نمونه کار:
-     ۱) تصویر را در پوشه  assets/dashboards/  بگذارید
+     ۱) تصویر را در پوشه  dashboards/  بگذارید
      ۲) یک آیتم به لیست زیر اضافه کنید (کپی یکی از آیتم‌ها و تغییر متن‌ها)
      ۳) تمام. ترتیب نمایش = ترتیب همین لیست.
      ---------------------------------------------------------------------
-     To add a dashboard: drop the image into assets/dashboards/ and add
+     To add a dashboard: drop the image into dashboards/ and add
      one entry to the list below.
      ======================================================================= */
   var DASHBOARDS = [
     {
-      img:   'assets/dashboards/01.png',
+      img:   'dashboards/01.png',
       titleFa: 'داشبورد مالی بیمارستان',
       titleEn: 'Hospital financial dashboard',
       descFa:  'درآمد به تفکیک بخش، پزشک و شرکت بیمه به همراه نرخ کسورات',
@@ -821,7 +821,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       tool:    'Power BI · SQL Server · SSAS'
     },
     {
-      img:   'assets/dashboards/02.png',
+      img:   'dashboards/02.png',
       titleFa: 'داشبورد درمان و اشغال تخت',
       titleEn: 'Clinical & bed-occupancy dashboard',
       descFa:  'ضریب اشغال تخت، میانگین مدت اقامت و نرخ بستری مجدد',
@@ -829,7 +829,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       tool:    'Power BI · DAX'
     },
     {
-      img:   'assets/dashboards/03.png',
+      img:   'dashboards/03.png',
       titleFa: 'داشبورد رزرواسیون و هتلداری',
       titleEn: 'Booking & hospitality dashboard',
       descFa:  'ضریب اشغال، ADR و RevPAR، نرخ تبدیل و سهم کانال‌های فروش',
@@ -837,7 +837,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       tool:    'Power BI · SSIS'
     },
     {
-      img:   'assets/dashboards/04.png',
+      img:   'dashboards/04.png',
       titleFa: 'داشبورد فروش و CRM',
       titleEn: 'Sales & CRM dashboard',
       descFa:  'نرخ جذب و ریزش مشتری، قیف فروش و بخش‌بندی RFM',
@@ -845,7 +845,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       tool:    'Power BI · Python'
     },
     {
-      img:   'assets/dashboards/05.png',
+      img:   'dashboards/05.png',
       titleFa: 'داشبورد منابع انسانی',
       titleEn: 'Human-resources dashboard',
       descFa:  'نرخ ترک خدمت، غیبت، اضافه‌کاری و بهره‌وری پرسنل',
@@ -853,7 +853,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       tool:    'Power BI'
     },
     {
-      img:   'assets/dashboards/06.png',
+      img:   'dashboards/06.png',
       titleFa: 'داشبورد خرده‌فروشی',
       titleEn: 'Retail dashboard',
       descFa:  'فروش شعب، گردش موجودی، نرخ عدم موجودی و تحلیل ABC',
@@ -886,8 +886,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;color:v
       if(!g.querySelector('.shot') && !g.querySelector('.empty-note')){
         var n=document.createElement('div');
         n.className='empty-note';
-        n.setAttribute('data-fa','هنوز تصویری اضافه نشده است — تصاویر داشبورد را در پوشه assets/dashboards بگذارید.');
-        n.setAttribute('data-en','No screenshots yet — drop your dashboard images into assets/dashboards.');
+        n.setAttribute('data-fa','هنوز تصویری اضافه نشده است — تصاویر داشبورد را در پوشه dashboards بگذارید.');
+        n.setAttribute('data-en','No screenshots yet — drop your dashboard images into dashboards.');
         n.textContent = html.lang==='en' ? n.getAttribute('data-en') : n.getAttribute('data-fa');
         g.appendChild(n);
       }
